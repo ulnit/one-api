@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{TITLE}</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+  <a href="/" class="nav-brand">🌐 <span>万象衍智</span></a>
+  <div class="nav-links" id="navLinks"><a href="/">首页</a>
+      <a href="/models" class="active">模型服务</a>
+      <a href="/data">数据平台</a>
+      <a href="/developers">开发者中心</a>
+      <a href="/pricing">定价</a>
+      <a href="/cases">案例</a>
+      <a href="/about">关于</a>
+      <a href="/contact">联系</a><a href="https://ai.ulnit.com" class="nav-cta">免费开始</a></div>
+  <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</div></nav>
+
+<main>
+<section class="page-hero">
+  <h1>一个 API 密钥，调用全球顶尖智能</h1>
+  <p>无需对接多家供应商，单一接口即可调用 OpenAI、Anthropic、Google DeepMind、Meta AI、阿里巴巴通义等主流模型</p>
+</section>
+<section class="section" style="padding-top:0;">
+<h2>支持的模型</h2>
+<h3 style="color:var(--accent);margin:32px 0 16px;">OpenAI</h3>
+<div class="cards">
+<div class="card"><h3>GPT-5.5</h3><p>对话 · 代码 · 分析 · 推理</p><ul><li>上下文：1M</li><li>成本：$6.0/$36.0</li></ul></div>
+<div class="card"><h3>GPT-5.5 Pro</h3><p>顶级推理 · 复杂任务</p><ul><li>上下文：1M</li><li>成本：$36.0/$216.0</li></ul></div>
+<div class="card"><h3>GPT-5.4</h3><p>对话 · 代码 · 分析</p><ul><li>上下文：1.1M</li><li>成本：$3.0/$18.0</li></ul></div>
+<div class="card"><h3>GPT-5.4 Mini</h3><p>对话 · 简单任务</p><ul><li>上下文：400K</li><li>成本：$0.9/$5.4</li></ul></div>
+<div class="card"><h3>GPT-5.4 Nano</h3><p>快速响应 · 分类</p><ul><li>上下文：128K</li><li>成本：$0.24/$1.5</li></ul></div>
+<div class="card"><h3>o3</h3><p>复杂推理 · 数学</p><ul><li>上下文：200K</li><li>成本：$2.4/$9.6</li></ul></div>
+<div class="card"><h3>o3-mini</h3><p>代码 · 推理</p><ul><li>上下文：200K</li><li>成本：$1.32/$5.28</li></ul></div>
+</div>
+
+<h3 style="color:var(--accent);margin:32px 0 16px;">Anthropic</h3>
+<div class="cards">
+<div class="card"><h3>Claude Opus 4.7</h3><p>复杂推理 · 编码 · Agent</p><ul><li>上下文：1M</li><li>成本：$6.0/$30.0</li></ul></div>
+<div class="card"><h3>Claude Sonnet 4.6</h3><p>对话 · 代码 · 长文本</p><ul><li>上下文：1M</li><li>成本：$3.6/$18.0</li></ul></div>
+<div class="card"><h3>Claude Haiku 4.5</h3><p>快速响应 · 简单任务</p><ul><li>上下文：200K</li><li>成本：$1.2/$6.0</li></ul></div>
+</div>
+
+<h3 style="color:var(--accent);margin:32px 0 16px;">Google</h3>
+<div class="cards">
+<div class="card"><h3>Gemini 3.1 Pro Preview</h3><p>多模态 · 长文本 · 推理</p><ul><li>上下文：1M</li><li>成本：$2.4/$14.4</li></ul></div>
+<div class="card"><h3>Gemini 3 Flash Preview</h3><p>多模态 · 快速响应</p><ul><li>上下文：1M</li><li>成本：$0.6/$3.6</li></ul></div>
+<div class="card"><h3>Gemini 3.1 Flash-Lite</h3><p>快速响应 · 简单任务</p><ul><li>上下文：1M</li><li>成本：$0.3/$1.8</li></ul></div>
+</div>
+
+<h3 style="color:var(--accent);margin:32px 0 16px;">Meta</h3>
+<div class="cards">
+<div class="card"><h3>Llama 4 Maverick</h3><p>对话 · 代码</p><ul><li>上下文：1M</li><li>成本：$0.18/$0.72</li></ul></div>
+<div class="card"><h3>Llama 4 Scout</h3><p>快速响应 · 简单任务</p><ul><li>上下文：10M</li><li>成本：$0.096/$0.36</li></ul></div>
+<div class="card"><h3>Llama 3.3 70B</h3><p>对话 · 代码</p><ul><li>上下文：128K</li><li>成本：$0.12/$0.24</li></ul></div>
+</div>
+
+<h3 style="color:var(--accent);margin:32px 0 16px;">中国大模型</h3>
+<div class="cards">
+<div class="card"><h3>Qwen3.5-Plus</h3><p>对话 · 中文优化 · 多模态</p><ul><li>上下文：1M</li><li>成本：$0.312/$1.872</li></ul></div>
+<div class="card"><h3>Qwen3.5-Flash</h3><p>快速响应 · 简单任务</p><ul><li>上下文：1M</li><li>成本：$0.078/$0.312</li></ul></div>
+<div class="card"><h3>Qwen3.5 397B A17B</h3><p>推理 · 视觉 · 多模态</p><ul><li>上下文：1M</li><li>成本：$0.468/$1.08</li></ul></div>
+<div class="card"><h3>Qwen3 Coder Plus</h3><p>代码 · 技术 · 长篇</p><ul><li>上下文：1M</li><li>成本：$0.78/$3.9</li></ul></div>
+<div class="card"><h3>DeepSeek V3.2</h3><p>对话 · 推理</p><ul><li>上下文：164K</li><li>成本：$0.312/$0.456</li></ul></div>
+<div class="card"><h3>DeepSeek R1</h3><p>复杂推理 · 数学</p><ul><li>上下文：64K</li><li>成本：$0.6/$2.616</li></ul></div>
+</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>智能路由引擎</h2>
+<p class="section-subtitle">自动选择性价比最优的模型和渠道，支持渠道亲和性和失败重试</p>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:24px; text-align:center;">
+<div class="card"><div class="card-icon">🎯</div><h3>任务分析</h3><p>智能识别任务复杂度与类型</p></div>
+<div class="card"><div class="card-icon">🔗</div><h3>模型匹配</h3><p>从 38+ 模型中选择最优组合</p></div>
+<div class="card"><div class="card-icon">⚡</div><h3>路径优化</h3><p>自动选择性价比最高的路由</p></div>
+</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>计费说明</h2>
+<p class="section-subtitle">所有模型价格均为官方价格的 120%，按实际使用 Token 数计费</p>
+<div class="cards">
+<div class="card"><div class="card-icon">💰</div><h3>按量计费</h3><p>用多少付多少，无最低消费</p></div>
+<div class="card"><div class="card-icon">📐</div><h3>Token 级计量</h3><p>精确到每个 Token 的使用</p></div>
+<div class="card"><div class="card-icon">⏱️</div><h3>实时扣费</h3><p>账户余额实时更新</p></div>
+</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>支持的 AI Agent 系统</h2>
+<div class="daemon-grid">
+<div class="card"><h3>🐺 OpenClaw</h3><p>开源 Agent 框架，支持多工具调用和工作流编排</p><ul><li>工具调用</li><li>工作流编排</li><li>多 Agent 协作</li></ul></div>
+<div class="card"><h3>⚡ Hermes Agent</h3><p>高性能 Agent 运行时，支持自动睡眠唤醒和弹性伸缩</p><ul><li>自动睡眠</li><li>弹性伸缩</li><li>容器化部署</li></ul></div>
+<div class="card"><h3>🦀 ZeroClaw</h3><p>去中心化 Agent 协作网络，支持跨链智能合约调用和分布式任务执行</p><ul><li>去中心化架构</li><li>跨链互操作</li><li>分布式执行</li><li>智能合约集成</li></ul></div>
+<div class="card"><h3>🔧 GoClaw</h3><p>基于 Go 语言的高性能 Agent 框架，支持并发任务处理和轻量级部署</p><ul><li>Go 语言实现</li><li>高并发处理</li><li>轻量级部署</li><li>原生性能优化</li></ul></div>
+</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>快速接入</h2>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>注册账号</h3><p>创建免费账户</p></div>
+<div class="step"><div class="step-num">2</div><h3>获取 API Key</h3><p>在控制台生成密钥</p></div>
+<div class="step"><div class="step-num">3</div><h3>开始调用</h3><p>使用 OpenAI 兼容接口</p></div>
+</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>API 接入示例</h2>
+<div class="code-block"><span class="c1"># 使用 OpenAI 兼容接口</span><br><span class="c2">curl</span> https://ai.ulnit.com/v1/chat/completions \<br>&nbsp;&nbsp;-H <span class="c3">"Authorization: Bearer sk-your-api-key"</span> \<br>&nbsp;&nbsp;-H <span class="c3">"Content-Type: application/json"</span> \<br>&nbsp;&nbsp;-d <span class="c3">'{"model":"gpt-4o","messages":[{"role":"user","content":"你好"}]}'</span><br><br><span class="c1"># Python 示例</span><br><span class="c2">import</span> openai<br><span class="c4">client</span> = openai.<span class="c2">OpenAI</span>(api_key=<span class="c3">"sk-your-api-key"</span>, base_url=<span class="c3">"https://ai.ulnit.com/v1"</span>)<br><span class="c4">response</span> = client.chat.completions.create(model=<span class="c3">"gpt-4o"</span>, messages=[{<span class="c3">"role"</span>:<span class="c3">"user"</span>,<span class="c3">"content"</span>:<span class="c3">"你好"</span>}])</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<h2>OAP — OmniMind Agent Platform</h2>
+<p class="section-subtitle">订阅驱动的 AI Agent 容器自动部署与调度平台，支持自动睡眠唤醒、Best-Fit 智能调度</p>
+<h3 style="margin-bottom:16px;">OAP 接入流程</h3>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>订阅套餐</h3><p>选择适合的 Agent 容器规格套餐</p></div>
+<div class="step"><div class="step-num">2</div><h3>自动部署</h3><p>系统自动创建并部署 Agent 容器</p></div>
+<div class="step"><div class="step-num">3</div><h3>访问代理</h3><p>通过专属代理 URL 访问 Agent</p></div>
+</div>
+<h3 style="margin:24px 0 16px;">核心特性</h3>
+<div class="cards">
+<div class="card"><h3>Best-Fit 智能调度</h3></div>
+<div class="card"><h3>反向代理与 Web 终端</h3></div>
+<div class="card"><h3>事件驱动生命周期管理</h3></div>
+<div class="card"><h3>支持 OpenClaw、Hermes Agent</h3></div>
+</div>
+<div style="text-align:center;margin-top:32px;">
+<a href="https://ai.ulnit.com" class="btn-primary">免费开始</a>
+<a href="/developers" class="btn-secondary" style="margin-left:12px;">查看 API 文档</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <p class="footer-tagline">OmniMind — Intelligence Infrastructure for the AI-Native World</p>
+  <div class="footer-links">
+    <a href="/models">产品</a><a href="/developers">文档</a><a href="/pricing">定价</a>
+    <a href="/cases">案例</a><a href="/about">关于</a><a href="/contact">联系</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 万象衍智 OmniMind. <a href="https://beian.miit.gov.cn" style="color:var(--text-muted)">湘ICP备2020023990号-1</a></p>
+</footer>
+</body></html>

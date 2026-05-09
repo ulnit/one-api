@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{TITLE}</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+  <a href="/" class="nav-brand">🌐 <span>万象衍智</span></a>
+  <div class="nav-links" id="navLinks"><a href="/">首页</a>
+      <a href="/models">模型服务</a>
+      <a href="/data">数据平台</a>
+      <a href="/developers" class="active">开发者中心</a>
+      <a href="/pricing">定价</a>
+      <a href="/cases">案例</a>
+      <a href="/about">关于</a>
+      <a href="/contact">联系</a><a href="https://ai.ulnit.com" class="nav-cta">免费开始</a></div>
+  <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</div></nav>
+<main>
+<section class="page-hero"><h1>开发者文档中心</h1></section>
+<section class="section" style="padding-top:0;"><h2>快速入门</h2>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>注册账号</h3><p>创建免费账户，获取 API Key</p></div>
+<div class="step"><div class="step-num">2</div><h3>配置 Base URL</h3><p>设置 OpenAI 兼容的 API 地址</p></div>
+<div class="step"><div class="step-num">3</div><h3>开始调用</h3><p>使用任何 OpenAI 兼容客户端调用</p></div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><h2>API 配置</h2>
+<p class="section-subtitle">采用 OpenAI 兼容接口格式，任何支持 OpenAI 的客户端和 SDK 均可直接使用</p>
+<div class="cards" style="text-align:center;">
+<div class="card"><h3>Base URL</h3><code style="font-size:14px;color:var(--accent2)">https://ai.ulnit.com/v1</code></div>
+<div class="card"><h3>认证方式</h3><code style="font-size:14px;color:var(--accent2)">Bearer Token</code></div>
+<div class="card"><h3>接口格式</h3><code style="font-size:14px;color:var(--accent2)">OpenAI Compatible</code></div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><h2>配置示例</h2>
+<div class="card" style="margin-bottom:16px;"><h3>Python (openai 库)</h3>
+<div class="code-block"><span class="c2">from</span> openai <span class="c2">import</span> OpenAI<br><span class="c4">client</span> = OpenAI(<br>&nbsp;&nbsp;api_key=<span class="c3">"sk-your-api-key"</span>,<br>&nbsp;&nbsp;base_url=<span class="c3">"https://ai.ulnit.com/v1"</span><br>)</div></div>
+<div class="card" style="margin-bottom:16px;"><h3>Node.js (openai 库)</h3>
+<div class="code-block"><span class="c2">import</span> OpenAI <span class="c2">from</span> <span class="c3">'openai'</span>;<br><span class="c2">const</span> <span class="c4">client</span> = <span class="c2">new</span> OpenAI({<br>&nbsp;&nbsp;apiKey: <span class="c3">'sk-your-api-key'</span>,<br>&nbsp;&nbsp;baseURL: <span class="c3">'https://ai.ulnit.com/v1'</span><br>});</div></div>
+<div class="card"><h3>curl 命令</h3>
+<div class="code-block"><span class="c2">curl</span> https://ai.ulnit.com/v1/chat/completions \<br>&nbsp;&nbsp;-H <span class="c3">"Authorization: Bearer sk-your-api-key"</span> \<br>&nbsp;&nbsp;-H <span class="c3">"Content-Type: application/json"</span> \<br>&nbsp;&nbsp;-d <span class="c3">'{"model":"gpt-4o","messages":[{"role":"user","content":"你好"}]}'</span></div></div></section></main>
+<footer class="footer">
+  <p class="footer-tagline">OmniMind — Intelligence Infrastructure for the AI-Native World</p>
+  <div class="footer-links"><a href="/models">产品</a><a href="/developers">文档</a><a href="/pricing">定价</a><a href="/cases">案例</a><a href="/about">关于</a><a href="/contact">联系</a></div>
+  <p class="footer-copy">&copy; 2026 万象衍智 OmniMind. <a href="https://beian.miit.gov.cn" style="color:var(--text-muted)">湘ICP备2020023990号-1</a></p>
+</footer></body></html>
